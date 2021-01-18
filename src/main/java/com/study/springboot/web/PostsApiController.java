@@ -1,7 +1,7 @@
 package com.study.springboot.web;
 
 
-import com.study.springboot.services.posts.PostsService;
+import com.study.springboot.web.services.posts.PostsService;
 import com.study.springboot.web.dto.PostsResponseDto;
 import com.study.springboot.web.dto.PostsSaveRequestDto;
 import com.study.springboot.web.dto.PostsUpdateRequestDto;
@@ -21,14 +21,14 @@ public class PostsApiController {
 
     @PutMapping("/api/v1/posts/{id}")
     public Long update(@PathVariable Long id , @RequestBody PostsUpdateRequestDto requestDto){
-        return null;
-        //return postsService.update(id, requestDto);
+
+        return postsService.update(id, requestDto);
     }
 
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById (@PathVariable Long id){
-        return null;
-        //return postsService.findById(id);
+
+        return postsService.findById(id);
     }
 
 }

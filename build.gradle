@@ -32,6 +32,7 @@ dependencies {
     compile('com.h2database:h2')
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile("org.springframework.boot:spring-boot-devtools")
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client') //소셜기능구현시 필요
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

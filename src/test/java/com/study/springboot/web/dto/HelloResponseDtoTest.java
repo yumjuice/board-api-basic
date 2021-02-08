@@ -6,6 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class HelloResponseDtoTest  {
 
     @Test
+    //롬복 Get 메서드와 @RequiredArgsConstructor 검증
     public void 롬복_기능_테스트(){
         String name="test";
         int amount=1000;
